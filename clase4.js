@@ -5,7 +5,7 @@ var nombre = 'jose', edad = 23
 
 // Para definir una función utilizaremos la palabra reservada ““function””
 // Delimitamos el cuerpo de la función usando llaves { }
-functionimprimirEdad(){
+function imprimirEdad(){
 console.log(`${nombre} tiene ${edad} años`);
 }
 
@@ -14,7 +14,7 @@ imprimirEdad()
 
 /* funcio que acepta parametros. Los parámetros de la función son variables que se pasan 
  a la función escribíendolos entre paréntesis () */
-functionimprimirEdad2(n, e){
+function imprimirEdad2(n, e){
 console.log(`${n} tiene ${e} años`);
 }
 //Para invocar a la funcion pasando parametros por referencia
