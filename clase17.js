@@ -6,33 +6,42 @@ Estos elementos pueden ser números, strings, booleanos, objetos, etc.*/
 let hernan = {
     nombre: 'Hernan',
     apellido: 'Salinas',
-    altura: 1.62
+    altura: 1.62,
+    cantidadDeLibros: 25
 }
 
 let davis = {
     nombre: 'Davis',
     apellido: 'Pendevis',
-    altura: 1.81
+    altura: 1.81,
+    cantidadDeLibros: 14
 }
 let arelys = {
     nombre: 'Arelys',
     apellido: 'Maza',
-    altura: 1.62
+    altura: 1.62,
+    cantidadDeLibros: 18
+
 }
 let carol = {
     nombre: 'Carolina',
     apellido: 'Herrera',
-    altura: 1.78
+    altura: 1.78,
+    cantidadDeLibros: 21
 }
 let andres = {
     nombre: 'Andres',
     apellido: 'Ramirez',
-    altura: 1.85
+    altura: 1.85,
+    cantidadDeLibros: 14
+
 }
 let jefferson = {
     nombre: 'Jefferson',
     apellido: 'Zambrano',
-    altura: 1.69
+    altura: 1.69,
+    cantidadDeLibros: 32
+
 }
 
 let personas = [hernan, davis, arelys, carol, andres, jefferson]
@@ -67,3 +76,11 @@ devuelve array nuevo con los elementos modificados.*/
 console.log('Personas con altura en cms')
 let personasAlturacms = personas.map(pasarAlturaAcms)
 console.log(personasAlturacms)
+
+//Clase 20 Reducir un array a un valor
+// a un arrow function se le puede aplicar desestructuracion y renombramiento de las variables
+const reducer = (acum, {cantidadDeLibros: librosPorPersona}) => acum + librosPorPersona
+console.log('las personas en total son ')
+console.log(personas)
+let totalLibros = personas.reduce(reducer, 0)
+console.log('El total de libros es '+totalLibros)
