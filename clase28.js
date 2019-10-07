@@ -8,4 +8,12 @@ const opts = {
 const onPeopleResponse = (person) => {
     console.log(`Hola yo soy ${person.name}`)
 }
-$.get(lukeUrl, opts, onPeopleResponse) 
+const obtenerById = (id) => {
+    let url = `${API_URL}${PEOPLE_URL.replace(':id', id)}` 
+    $.get(url, opts, onPeopleResponse) 
+}
+
+obtenerById(1)
+obtenerById(2)
+obtenerById(3) 
+
