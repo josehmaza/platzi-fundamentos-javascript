@@ -1,0 +1,95 @@
+body {
+    background-color: #9ebbf0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Turret Road', cursive;
+}
+
+.navigation {
+    grid-area: info;
+    background: #9ecff0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px
+}
+
+.container__button--azul {
+    grid-area: azul;
+    background: blue;
+}
+
+.container__button--azul.light {
+    background: rgba(0, 0, 255, 0.438);
+}
+
+.container__button--rojo {
+    grid-area: rojo;
+    background: red;
+}
+
+.container__button--rojo.light {
+    background: rgba(255, 0, 0, 0.438);
+}
+
+.container__button--verde {
+    grid-area: verde;
+    background: green;
+}
+
+.container__button--verde.light {
+    background: rgba(9, 255, 0, 0.438);
+}
+
+.container__button--amarillo {
+    grid-area: amarillo;
+    background: yellow;
+}
+
+.container__button--amarillo.light {
+    background: rgba(255, 255, 0, 0.582);
+}
+
+.container__button--rosado {
+    grid-area: rosado;
+    background: palevioletred;
+}
+
+.container__button--rosado.light {
+    background: rgba(247, 0, 255, 0.438);
+}
+
+.container {
+    width: 70vh;
+    display: grid;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    grid-template-rows: auto;
+    grid-template-areas: ". azul azul   rojo rojo ." ". verde amarillo  amarillo rosado. " ". verde   amarillo amarillo rosado . " " info info info info info info "
+}
+
+.container>div {
+    padding: 50%;
+}
+
+.container__button--start {
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    background: linear-gradient(rgb(2, 175, 255), blue);
+    border: 0;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+    outline: none
+}
+
+.hidden {
+    display: none
+}
